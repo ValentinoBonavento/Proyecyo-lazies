@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+html{font-family: 'Koulen', sans-serif;}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+header.Arriba{
+    background-color: #b246f2;
+    grid-area: header;
+}
+
+.grid div.desc{
+    align-items: center;
+    text-align: center;
+}
+
+.grid main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}    
+
+.grid img.img{
+    width: 520px;
+    border: 00.5px solid black;
+    margin: 10px;
+    
+}
+
+@media(max-width:578px){
+    img.img{
+        width: 250px;
+    }
+
+}
+
+.galeria:nth-child(1){
+    margin-bottom: 100px;
+    
+}
+
+
+@media (min-width:680px){
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 00.5px solid black;
+  }
+
+}
+@media (max-width:679px){
+    .grid div.logo{
+        text-align: center;
+    } 
+}
+
+
+nav ul.lista {
+    list-style: none;
+    text-align: center;
+    border: 00.5px solid black;
+    
+}   
+
+nav ul.lista li{
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul.lista li a{
+text-decoration: none;
+font-size: large;
+color: black;
+}
+
+body{
+    background-color: #fcfcfc;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c2b1de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+nav div.lista2{
+    list-style: none;
+    text-align: center;
+}
+
+nav div.lista2{
+    margin: 20px;
+    
+}
+
+nav div.lista2 a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+nav div.lista2 a#contacto{
+    border-right: 0.5px solid black;
+}
+
+nav div.lista2 a#ig{
+    border-left: 0.5px solid black;
+}
+
+footer.foot{
+    grid-area: footer;
+    margin-top: 20px;
+}
+
+p.fin   {
+    margin-top: 60px;
+    text-align: right;
+}
+
+ 
+.Inicio {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+div.grid {
+  display: grid;
+  grid-template-areas: "header header header header" 
+  "main main main main"
+  "footer footer footer footer";
+  row-gap: 1em;
+}
+
+/* Tienda */
+
+@media (max-width:580px){
+    div.tarjeta {
+        border: 0.5px solid black;
+        height: 400px;
+        width: 250px;
+        text-align: center;
+        margin: 10px;
+       
+    }
+}
+
+div.tarjeta {
+    border: 0.5px solid black;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+   
+}
+
+
+
+main.sop{
+    text-align: center;
+}
+
+div.shop {
+    display:flex;
+   margin:20px;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.Producto {
+    max-width: 90%;  
+    border: 0.5px solid black;
+    text-align: center;
+   }
+
+.nombre {
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border: 0.5px solid black;
+    font-family: 'Koulen', sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fcfcfc;
+}
+
+/* Nosotros */
+
+.intro {
+    text-align: center;
+    margin: 20px;
+}
+
+div.pyq{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.pregunta {
+font-size: 30px;
+margin:10px ;
+
+}
+
+p.respuesta{
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+
+.pyq div{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Pedidos */
+
+@media (max-width:580px){
+    div.tarjeta {
+        border: 0.5px solid black;
+        height: 400px;
+        width: 250px;
+        text-align: center;
+        margin: 10px;
+       
+    }
+}
+
+main.carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ayuda */
+
+div.form {
+    margin: 20px;
+    text-align: center;
+}
+
+.mapa {
+    border: 0.5px solid black;
+}
