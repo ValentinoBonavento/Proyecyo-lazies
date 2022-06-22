@@ -127,7 +127,7 @@ p.fin   {
 div.grid {
   display: grid;
   grid-template-areas: "header header header header" 
-  "main main main main"
+  "aside main main main"
   "footer footer footer footer";
   row-gap: 1em;
 }
@@ -161,7 +161,7 @@ main.sop{
 }
 
 div.shop {
-    display:flex;
+  display: flex;  
    margin:20px;
    justify-content: space-around;
    flex-wrap: wrap;
@@ -250,4 +250,41 @@ div.form {
 
 .mapa {
     border: 0.5px solid black;
+}
+
+/* Favoritos */
+
+
+div.grilla2{
+    display: grid;
+    grid-template-areas: "aside main main1"
+    "aside desc desc" ;
+    gap: 1rem ;
+    
+}
+
+div.favs{  
+    grid-area: main;
+
+}
+
+
+
+
+
+section.favs2{ 
+    grid-area: main1;
+   
+
+}
+
+aside.lado{
+    grid-area: aside;
+    background-color: aqua;
+    
+}
+
+div.oferta{
+    grid-area: desc ;
+    text-align: center;
 }
