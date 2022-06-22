@@ -253,13 +253,16 @@ div.form {
 }
 
 /* Favoritos */
-
+main.favo{
+    flex-wrap: wrap;
+}
 
 div.grilla2{
     display: grid;
-    grid-template-areas: "aside main main1"
-    "aside desc desc" ;
+    grid-template-areas: "aside main "
+    "aside desc " ;
     gap: 1rem ;
+    grid-template-columns: 0.2fr 1fr;
     
 }
 
@@ -269,22 +272,24 @@ div.favs{
 }
 
 
-
-
-
-section.favs2{ 
-    grid-area: main1;
-   
-
-}
-
 aside.lado{
     grid-area: aside;
     background-color: aqua;
-    
+    flex-wrap: wrap;
 }
 
 div.oferta{
     grid-area: desc ;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:350px){
+div.tarjeta {
+    border: 0.5px solid black;
+    height: 350px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}   
 }
