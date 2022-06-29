@@ -17,13 +17,38 @@ header.Arriba{
 }
 
 .grid main{
-    grid-area: main;
+    grid-area: img;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-}    
+} 
+
+div.anim p{
+    font-size: 180px;
+    grid-area: main;
+    align-items: center;
+    
+}
+
+div.anim span{
+    animation: animacion 3s infinite alternate;
+    background-color: #fcfcfc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c2b1de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    position: absolute;
+}
+
+
+@keyframes animacion {
+ from {
+   width: 100%;
+ }
+ to {
+    width: 0%;
+ }
+}
+
 
 .grid img.img{
     width: 520px;
@@ -44,8 +69,16 @@ header.Arriba{
     
 }
 
+div.anim{
+    margin-bottom: 180px;
+    margin-top: 80px;
+    grid-area: main;
+}
+div.anim h3{
+    font-size: 75px;
+}
 
-@media (min-width:680px){
+@media (min-width:710px){
 .navbar{
     width: 100%;
     display: flex;
@@ -55,11 +88,25 @@ header.Arriba{
   }
 
 }
-@media (max-width:679px){
+@media (max-width:709px){
     .grid div.logo{
         text-align: center;
     } 
+    div.anim p{
+        font-size: 75px;
+        align-items: center; 
+     }
+     div.anim h3{
+        font-size: 40px;
+        grid-area: main;
+    }
+    div.anim{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 }
+
+
 
 
 nav ul.lista {
@@ -127,7 +174,8 @@ p.fin   {
 div.grid {
   display: grid;
   grid-template-areas: "header header header header" 
-  "aside main main main"
+  "main main main main"
+  "img img img img"
   "footer footer footer footer";
   row-gap: 1em;
 }
