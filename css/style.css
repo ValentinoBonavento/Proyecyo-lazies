@@ -4,7 +4,7 @@ html{font-family: 'Koulen', sans-serif;}
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing:border-box;
+    box-sizing:border-box ;
 }
 header.Arriba{
     background-color: #b246f2;
@@ -57,6 +57,13 @@ div.anim span{
     
 }
 
+#img1{
+    border: 00.5px solid black;
+}
+#img2{
+    border: 00.5px solid black;
+}
+
 @media(max-width:578px){
     img.img{
         width: 250px;
@@ -79,7 +86,7 @@ div.anim h3{
 }
 
 @media (min-width:710px){
-.navbar{
+.nav{
     width: 100%;
     display: flex;
     align-items: center;
@@ -89,7 +96,7 @@ div.anim h3{
 
 }
 @media (max-width:709px){
-    .grid div.logo{
+    div.logo{
         text-align: center;
     } 
     div.anim p{
@@ -118,7 +125,8 @@ nav ul.lista {
 
 nav ul.lista li{
     display: inline-block;
-    margin: 10px;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 nav ul.lista li a{
@@ -168,7 +176,6 @@ p.fin   {
  
 .Inicio {
     max-width: 50%;
-    max-height: 50%;
 }
 
 div.grid {
@@ -340,4 +347,8 @@ div.tarjeta {
     text-align: center;
     margin: 10px;
 }   
+}
+
+body.index{
+    font-family: 'Koulen', sans-serif;
 }

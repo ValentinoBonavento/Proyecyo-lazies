@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/183232381_2979056415703673_6667757708898395484_n.jpg">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    
     <title>Lazies</title>
 </head>
-<body>
+<body class="index">
     <div class="grid">
     <header class="Arriba">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="./index.html" class="logo"><img src="./img/logo1.png" alt="Inicio" class="Inicio"></a>
+    <div class="contaiener-fluid row">
+        <nav class="nav">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3" >
+                <div class="logo">
+                    <a href="./index.html" class="logo"><img src="./img/logo1.png" alt="Inicio" class="Inicio"></a>
+                </div>
             </div>
+            <div class="col-12 col-sm-12">
             <div class="home">    
                 <ul class="lista">
-                    <li class="derecha"><a href="./contenido/tienda.html">Tienda</a></li>
+                    <li class="derecha"><a href="./contenido/tienda.html" >Tienda</a></li>
                     <li class="derecha"><a href="./contenido/nosotros.html">Nosotros</a></li>
                     <li class="derecha"><a href="./contenido/pedido.html">Pedidos</a></li>
                     <li class="derecha"><a href="./contenido/favoritos.html">Favoritos</a></li>
                  </ul>
             </div>
+            </div>
+        
         </nav>
     </header>
     <main class="contenido">
-        <div class="anim">
-            <p><span>&#160;</span>Z Z Z</p>
-            <h3>Para descasar mejor!</h3>
-        </div>  
+            <div class="anim">
+                <p class="col-12"><span>&#160;</span>Z Z Z</p>
+                <h3 class="col-12">Para descasar mejor!</h3>
+            </div>  
+        </div>
         
-        <picture class="galeria1">
-            <img src="./img/Producto.jpg" alt="Producto" class="img" id="img1">
-            <img src="./img/producto 2.jpg" alt="Producto2" class="img" id="img2">
-        </picture>
+            <div class="flew-wrap text-center">
+                <img src="./img/Producto.jpg" alt="Producto" class="img-fluid col-6 col-sm-6 col-md-6 col-lg-7 col-xl-7 col-xxl-8 mb-2" id="img1">
+                <img src="./img/producto 2.jpg" alt="Producto2" class="img-fluid col-6 col-sm-6  col-md-6 col-lg-7 col-xl-7 col-xxl-8 " id="img2">
+            </div>
+        
        
-
+    </div>
 
     </main>
     <footer class="foot">
@@ -54,5 +63,7 @@
         </nav>
     </footer>
 </div> 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

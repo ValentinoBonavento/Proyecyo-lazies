@@ -4,40 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
-<body>   
+<body class="index">   
     <header class="Arriba">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../index.html" class="logo"><img src="../img/logo1.png" alt="Inicio" class="Inicio"></a>
-            </div>
-            <div>    
-                <ul class="lista">
-                    <li class="derecha"><a href= "./tienda.html">Tienda</a></li>
-                    <li class="derecha"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="derecha"><a href="./pedido.html">Pedidos</a></li>
-                    <li class="derecha"><a href="./favoritos.html">Favoritos</a></li>
-                 </ul>
-            </div>
+        <div class="contaiener-fluid row">
+            <nav class="nav">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3" >
+                    <div class="logo">
+                        <a href="../index.html" class="logo"><img src="../img/logo1.png" alt="Inicio" class="Inicio"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12">
+                    <div class="home">    
+                        <ul class="lista">
+                        <li class="derecha"><a href= "./tienda.html">Tienda</a></li>
+                        <li class="derecha"><a href="./nosotros.html">Nosotros</a></li>
+                        <li class="derecha"><a href="./pedido.html">Pedidos</a></li>
+                        <li class="derecha"><a href="./favoritos.html">Favoritos</a></li>
+                    </ul>
+                </div>
+        </div>
         </nav>
     </header>
     <main>
         <div class="form">
             <h1>Servicio de asistencia</h1>
             <form action="" class="ayuda">
+                <div class="col-12">
                 <h2>Completa tus datos</h2>
-                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" class="btn" required>
-                <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" class="btn" required>
-                <input type="number" name="Telefono" id="Telefono" placeholder="Telefono" class="btn" required>
-                <input type="text" name="Email" id="Email" placeholder="Email" class="btn" required>
-                <input type="text-area" class="btn" placeholder="Describe tu problema" required >
-                <input type="submit" value="Enviar" class="btn">
+            </div>
+                <div col-12>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" class="btn" required>
+                </div>
+                <div col-12>
+                    <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" class="btn" required>
+                </div>
+                <div col-12>
+                    <input type="number" name="Telefono" id="Telefono" placeholder="Telefono" class="btn" required>
+                </div>
+                <div col-12>
+                    <input type="text" name="Email" id="Email" placeholder="Email" class="btn" required>
+                 </div>
+                <div col-12>
+                    <input type="text-area" class="btn" placeholder="Describe tu problema" required>
+                </div>
+                <div col-12>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
             </form>
-            <p>Nos podes encontrar en</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.7847463906687!2d-59.14037482658503!3d-37.32392618987254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f9aa6dfeec1%3A0xda6b67d8c8593d62!2sMitre%20578%2C%20B7000%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653920527804!5m2!1ses-419!2sar" width="200" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            <div class="col-12">
+                <p>Nos podes encontrar en</p>
+            </div>
+            <div class="col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.7847463906687!2d-59.14037482658503!3d-37.32392618987254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f9aa6dfeec1%3A0xda6b67d8c8593d62!2sMitre%20578%2C%20B7000%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653920527804!5m2!1ses-419!2sar" width="200" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
         </div>
+    </div>
     </main>
     <footer class="foot">
         <nav class="pie">
@@ -52,5 +77,6 @@
             <p class="fin">©Todos los derechos reservados, <a href="https://www.instagram.com/valentino.bonavento/" target="_blank">@Valentino.bonavento</a></p>
         </nav>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
