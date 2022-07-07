@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+html{font-family: 'Koulen', sans-serif;}
+/* variables */ 
+$title-font: 'Koulen', sans-serif;
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 00.5px solid black;
+  }
+
+    ul.lista {
+    list-style: none;
+    text-align: center;
+    border: 00.5px solid black;
+    
+        li{
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+            a{
+            text-decoration: none;
+            font-size: large;
+            color: black;
+            }
+        }
+
+    }
+
+    div.lista2{
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+    a{
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+}
+
+
+div.anim{
+    margin-bottom: 180px;
+    margin-top: 80px;
+    grid-area: main;
+        p{
+        font-size: 180px;
+        grid-area: main;
+        align-items: center;
+    
+        }
+
+        span{
+        animation: animacion 3s infinite alternate;
+        background-color: #fcfcfc;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c2b1de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        position: absolute;
+         }
+         h3{
+            font-size: 75px;
+        }
+}
+
+
+.grid {
+    div.desc{
+    align-items: center;
+    text-align: center;
+    }
+
+        main{
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    }
+}
+
+body.index{
+    font-family: $title-font;
+}
