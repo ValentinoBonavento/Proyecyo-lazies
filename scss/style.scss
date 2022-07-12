@@ -10,7 +10,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     border: 00.5px solid black;
-  }
+  
 
     ul.lista {
     list-style: none;
@@ -38,6 +38,7 @@ nav {
         text-decoration: none;
         padding: 10px;
         color: black;
+    }
     }
 }
 
@@ -82,5 +83,5 @@ div.anim{
 }
 
 body.index{
-    font-family: $title-font;
+    font-family:$title-font;
 }
