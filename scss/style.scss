@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 html{font-family: 'Koulen', sans-serif;}
 
-/* variables */ 
-$title-font: 'Koulen', sans-serif;
-$b: 00.5px solid black;
+@import "variables";
+@import "reset";
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing:border-box ;
-}
 header.Arriba{
     background-color: #b246f2;
     grid-area: header;
