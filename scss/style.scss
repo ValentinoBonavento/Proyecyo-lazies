@@ -1,87 +1,362 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 html{font-family: 'Koulen', sans-serif;}
+
 /* variables */ 
 $title-font: 'Koulen', sans-serif;
+$b: 00.5px solid black;
 
-
-nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 00.5px solid black;
-  
-
-    ul.lista {
-    list-style: none;
-    text-align: center;
-    border: 00.5px solid black;
-    
-        li{
-        display: inline-block;
-        margin-right: 10px;
-        padding: 10px;
-            a{
-            text-decoration: none;
-            font-size: large;
-            color: black;
-            }
-        }
-
-    }
-
-    div.lista2{
-    list-style: none;
-    text-align: center;
-    margin: 20px;
-    a{
-        text-decoration: none;
-        padding: 10px;
-        color: black;
-    }
-    }
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box ;
+}
+header.Arriba{
+    background-color: #b246f2;
+    grid-area: header;
 }
 
-
-div.anim{
-    margin-bottom: 180px;
-    margin-top: 80px;
-    grid-area: main;
-        p{
-        font-size: 180px;
-        grid-area: main;
-        align-items: center;
-    
-        }
-
-        span{
-        animation: animacion 3s infinite alternate;
-        background-color: #fcfcfc;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c2b1de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-        position: absolute;
-         }
-         h3{
-            font-size: 75px;
-        }
-}
-
-
-.grid {
-    div.desc{
+.grid div.desc{
     align-items: center;
     text-align: center;
-    }
+}
 
-        main{
+.grid main{
     grid-area: img;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+} 
+
+div.anim p{
+    font-size: 180px;
+    grid-area: main;
+    align-items: center;
+    
+}
+
+div.anim span{
+    animation: animacion 3s infinite alternate;
+    background-color: #fcfcfc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c2b1de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    position: absolute;
+}
+
+
+@keyframes animacion {
+ from {
+   width: 100%;
+ }
+ to {
+    width: 0%;
+ }
+}
+
+
+.grid img.img{
+    width: 520px;
+    border: $b;
+    margin: 10px;
+}
+#img1{
+    border: $b;
+}
+#img2{
+    border: $b;
+}
+
+
+@media(max-width:578px){
+    img.img{
+        width: 250px;
+    }
+
+}
+
+.galeria:nth-child(1){
+    margin-bottom: 100px;
+    
+}
+
+div.anim{
+    margin-bottom: 180px;
+    margin-top: 80px;
+    grid-area: main;
+        h3{
+            font-size: 75px;
+}
+}
+nav.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: $b;
+    background-color: #b246f2;
+    grid-area: header;
+  
+        ul.lista {
+            list-style: none;
+            text-align: center;
+            margin-bottom: 0rem;
+    
+   
+                 li{
+                    display: inline-block;
+                    margin-right: 10px;
+                    padding: 10px;
+
+
+                    a{
+                        text-decoration: none;
+                    font-size: large;
+                    color: black;
+}
+    }
+        }
+            }
+        
+
+body{
+    background-color: #fcfcfc;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c2b1de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+nav div.lista2{
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+
+    a{
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+}
+}
+
+nav div.lista2 a#contacto{
+    border-right: $b;
+}
+
+nav div.lista2 a#ig{
+    border-left: $b;
+}
+
+footer.foot{
+    grid-area: footer;
+    margin-top: 20px;
+}
+
+p.fin   {
+    margin-top: 60px;
+    text-align: right;
+}
+
+ 
+.Inicio {
+    max-width: 50%;
+}
+
+div.grid {
+  display: grid;
+  grid-template-areas: "header header header header" 
+  "main main main main"
+  "img img img img"
+  "footer footer footer footer";
+  row-gap: 1em;
+}
+
+/* Tienda */
+
+@media (max-width:580px){
+    div.tarjeta {
+        border: $b;
+        height: 400px;
+        width: 250px;
+        text-align: center;
+        margin: 10px;
+       
     }
 }
 
+div.tarjeta {
+    border: $b;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+   
+}
+
+
+
+main.sop{
+    text-align: center;
+}
+
+div.shop {
+  display: flex;  
+   margin:20px;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.Producto {
+    max-width: 90%;  
+    border: $b;
+    text-align: center;
+   }
+
+.nombre {
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border: $b;
+    font-family: 'Koulen', sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fcfcfc;
+}
+
+@media (max-width:768px){
+    #logo{
+       text-align: center;
+
+    } 
+    img.Inicio{
+        height: 100px;
+    }
+    div.anim{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+         p{
+            font-size: 75px;
+            align-items: center; 
+        }
+        h3{
+            font-size: 40px;
+            grid-area: main;
+    }
+}
+nav.nav ul.lista {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0rem;
+    border-top: $b;
+}
+}
+
+/* Nosotros */
+
+.intro {
+    text-align: center;
+    margin: 20px;
+}
+
+div.pyq{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.pregunta {
+font-size: 30px;
+margin:10px ;
+
+}
+
+p.respuesta{
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+
+.pyq div{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Pedidos */
+
+@media (max-width:580px){
+    div.tarjeta {
+        border: $b;
+        height: 400px;
+        width: 250px;
+        text-align: center;
+        margin: 10px;
+       
+    }
+}
+
+main.carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ayuda */
+
+div.form {
+    margin: 20px;
+    text-align: center;
+}
+
+.mapa {
+    border: $b;
+}
+
+/* Favoritos */
+main.favo{
+    flex-wrap: wrap;
+}
+
+div.grilla2{
+    display: grid;
+    grid-template-areas: "aside main "
+    "aside desc " ;
+    gap: 1rem ;
+    grid-template-columns: 0.2fr 1fr;
+    
+}
+
+div.favs{  
+    grid-area: main;
+
+}
+
+
+aside.lado{
+    grid-area: aside;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+
+div.oferta{
+    grid-area: desc ;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:350px){
+div.tarjeta {
+    border: $b;
+    height: 350px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}   
+}
+
 body.index{
-    font-family:$title-font;
+    font-family: $title-font;
 }
