@@ -1,3 +1,17 @@
 /* variables */ 
 $title-font: 'Koulen', sans-serif;
 $b: 00.5px solid black;
+
+$tarjetas:(
+    border: $b,
+    height: 400px,
+    width: 300px,
+    text-align: center,
+    margin: 10px
+);
+
+$colores:(
+    primario: rgb(109, 188, 224),
+    secundario: rgb(100, 100, 100),
+    terciario: rgba(255, 255, 255, 0)  
+);

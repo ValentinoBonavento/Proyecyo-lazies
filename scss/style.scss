@@ -175,10 +175,10 @@ div.grid {
 
 div.tarjeta {
     border: $b;
-    height: 400px;
-    width: 300px;
-    text-align: center;
-    margin: 10px;
+    height:map-get($tarjetas , $height);
+    width: map-get($tarjetas , $width);
+    text-align:map-get($tarjetas , $text-align);
+    margin: map-get($tarjetas , $margin );
    
 }
 
@@ -205,14 +205,7 @@ div.shop {
     text-align: center;
 }
 
-.btn {
-    margin: 10px;
-    padding: 10px;
-    border: $b;
-    font-family: 'Koulen', sans-serif;
-    background-color: transparent;
-    cursor: pointer;
-}
+
 
 .btn:hover {
     background-color: #fcfcfc;
@@ -283,7 +276,7 @@ p.respuesta{
 @media (max-width:580px){
     div.tarjeta {
         border: $b;
-        height: 400px;
+        height: map-get($tarjetas , $height);
         width: 250px;
         text-align: center;
         margin: 10px;
@@ -346,11 +339,32 @@ div.tarjeta {
     border: $b;
     height: 350px;
     width: 150px;
-    text-align: center;
-    margin: 10px;
+    text-align: map-get($tarjetas , $text-align );
+    margin: map-get($tarjetas, $margin );
 }   
 }
 
 body.index{
     font-family: $title-font;
+}
+
+li.vista:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px;
+    border: $b;
+    font-family: 'Koulen', sans-serif;
+    cursor: pointer;
+}
+
+@each $key , $var in $colores{
+
+    .btn-#{$key}{
+        @extend .btn;
+        background-color: $var;
+    }
 }
