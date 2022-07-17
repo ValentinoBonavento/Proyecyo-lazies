@@ -79,7 +79,10 @@ div.anim{
     grid-area: main;
         h3{
             font-size: 75px;
-}
+        }
+        h1{
+            font-size: 80px;
+        }
 }
 nav.nav{
     width: 100%;
@@ -175,10 +178,10 @@ div.grid {
 
 div.tarjeta {
     border: $b;
-    height:map-get($tarjetas , $height);
-    width: map-get($tarjetas , $width);
-    text-align:map-get($tarjetas , $text-align);
-    margin: map-get($tarjetas , $margin );
+    height:map-get($tarjetas , height ) ;
+    width: map-get($tarjetas , width);
+    text-align:map-get($tarjetas , text-align);
+    margin: map-get($tarjetas , margin );
    
 }
 
@@ -230,7 +233,11 @@ div.shop {
         h3{
             font-size: 40px;
             grid-area: main;
-    }
+        }
+        h1{
+            font-size: 40px;
+            grid-area: main;
+        }
 }
 nav.nav ul.lista {
     list-style: none;
@@ -276,7 +283,7 @@ p.respuesta{
 @media (max-width:580px){
     div.tarjeta {
         border: $b;
-        height: map-get($tarjetas , $height);
+        height: map-get($tarjetas , height);
         width: 250px;
         text-align: center;
         margin: 10px;
@@ -334,15 +341,7 @@ div.oferta{
     flex-wrap: wrap;
 }
 
-@media (max-width:350px){
-div.tarjeta {
-    border: $b;
-    height: 350px;
-    width: 150px;
-    text-align: map-get($tarjetas , $text-align );
-    margin: map-get($tarjetas, $margin );
-}   
-}
+
 
 body.index{
     font-family: $title-font;
@@ -361,10 +360,25 @@ li.vista:hover{
     cursor: pointer;
 }
 
-@each $key , $var in $colores{
-
-    .btn-#{$key}{
+@each $key, $var in $colores {
+    
+    .btn-#{$key} {
         @extend .btn;
         background-color: $var;
+        
     }
+}
+
+@media (max-width:350px){
+div.tarjeta {
+    border: $b;
+    text-align: map-get($tarjetas , text-align );
+    margin: map-get($tarjetas, margin );
+    @include propiedades(150px,350px);
+}  
+
+}
+@mixin propiedades($ancho, $alto){
+    width: $ancho;
+    height: $alto;
 }

@@ -11,7 +11,12 @@ $tarjetas:(
 );
 
 $colores:(
-    primario: rgb(109, 188, 224),
-    secundario: rgb(100, 100, 100),
+    primario: rgba(203, 209, 212, 0.699),
+    secundario: rgba(151, 138, 197, 0.459),
     terciario: rgba(255, 255, 255, 0)  
 );
+
+@mixin propiedades($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
