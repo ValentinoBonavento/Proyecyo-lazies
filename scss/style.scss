@@ -59,6 +59,13 @@ div.anim span{
 #img2{
     border: $b;
 }
+#img3{
+    border: $b;
+}
+
+div.carousel{
+    width: 40%;
+}
 
 
 @media(max-width:578px){
@@ -199,6 +206,7 @@ div.shop {
 }
 
 .Producto {
+    max-height: 60%;
     max-width: 90%;  
     border: $b;
     text-align: center;
@@ -208,7 +216,9 @@ div.shop {
     text-align: center;
 }
 
-
+p.precio{
+    margin-bottom: 0px;
+}
 
 .btn:hover {
     background-color: #fcfcfc;
