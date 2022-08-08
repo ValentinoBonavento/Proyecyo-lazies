@@ -92,6 +92,11 @@ div.anim span {
   border: 0.5px solid black;
 }
 
+#img4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 div.carousel {
   width: 40%;
 }
